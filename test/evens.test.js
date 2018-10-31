@@ -21,4 +21,12 @@ describe('evens array', () => {
   it('returns [2, 4] when given array [1,2,3,4]', () => {
     expect(getEvensFrom([1,2,3,4])).to.eql([2,4])
   });
+
+  it('returns [2, 4] when given array [1,2,3,4,5]', () => {
+    expect(getEvensFrom([1,2,3,4,5])).to.eql([2,4])
+  });
+
+  it('returns [2, 4, 6] when given array [1,2,3,4,5,6]', () => {
+    expect(getEvensFrom([1,2,3,4,5,6])).to.eql([2,4,6])
+  });
 });
