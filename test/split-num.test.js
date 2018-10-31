@@ -37,4 +37,8 @@ describe('splitNums', () => {
   it('returns [[1,2]] when give an array containing [3]', () => {
     expect(splitNums([3])).to.eql([[1,2]])
   });
+
+  it('returns [[2, 2], [3, 3], [3, 4], [4, 5], [49, 50]] when give an array containing [4, 6, 7, 9, 99]', () => {
+    expect(splitNums([4, 6, 7, 9, 99])).to.eql([[2, 2], [3, 3], [3, 4], [4, 5], [49, 50]])
+  });
 });
