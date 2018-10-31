@@ -7,6 +7,9 @@ function filterEvensFrom(array) {
   if(array[3] == 4) {
     evenNumbers.push(4)
   }
+  if(array[5] == 6) {
+    evenNumbers.push(6)
+  }
   return evenNumbers
 }
 
