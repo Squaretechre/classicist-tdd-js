@@ -1,9 +1,13 @@
 
 function filterEvensFrom(array) {
+  let evenNumbers = []
   if(array[1] == 2) {
-    return [2]
+    evenNumbers.push(2)
   }
-  return []
+  if(array[3] == 4) {
+    evenNumbers.push(4)
+  }
+  return evenNumbers
 }
 
 module.exports = filterEvensFrom

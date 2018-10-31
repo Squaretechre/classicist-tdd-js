@@ -13,4 +13,9 @@ describe('evens array', () => {
   it('returns array [2] when given array [1, 2]', () => {
     expect(filterEvensFrom([1, 2])).to.eql([2])
   });
+
+  // stay testing evens behaviour
+  it('returns array [2, 4] when given array [1, 2, 3, 4]', () => {
+    expect(filterEvensFrom([1, 2, 3, 4])).to.eql([2, 4])
+  });
 });
