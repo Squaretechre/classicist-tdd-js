@@ -10,6 +10,12 @@ function getEvensFrom(array) {
   if(array[5] === 6) {
     evenNumbers.push(6)
   }
+
+  for(let i=0; i < array.length; i++) {
+    if(array[i] % 2 == 0) {
+      evenNumbers.push(i)
+    }
+  }
   return evenNumbers
 }
 

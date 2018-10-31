@@ -29,4 +29,9 @@ describe('evens array', () => {
   it('returns [2, 4, 6] when given array [1,2,3,4,5,6]', () => {
     expect(getEvensFrom([1,2,3,4,5,6])).to.eql([2,4,6])
   });
+
+  it('returns only even numbers when given array with odds and evens', () => {
+    const numbers = [4, 6, 7, 9, 99, 9900, 467999900]
+    expect(getEvensFrom(numbers)).to.eql([4,6,9900,467999900])
+  });
 });
