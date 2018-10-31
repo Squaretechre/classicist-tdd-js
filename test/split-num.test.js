@@ -21,6 +21,10 @@ describe('splitNums', () => {
   });
 
   it('returns [1,1] when give an array containing 2', () => {
-    expect(splitNums([2])).to.eql([1,1])
+    expect(splitNums([2])).to.eql([[1,1]])
+  });
+
+  it('returns [[1,1], [2,2], [3,3]] when give an array containing [2,4,6]', () => {
+    expect(splitNums([2,4,6])).to.eql([[1,1], [2,2], [3,3]])
   });
 });
