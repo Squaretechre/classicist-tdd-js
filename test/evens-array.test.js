@@ -1,5 +1,5 @@
 const { expect } = require('chai');
-const getEvensFrom = require('../get-evens-from')
+const getEvensFrom = require('../evens-array')
 
 describe('evens array', () => {
   it('returns empty array when given empty array', () => {
