@@ -3,7 +3,9 @@
 
 Write a function that takes an array of numbers and returns 
 a new array of arrays containing the numbers split in two. 
+
 Even numbers should return a pair of the halved number; 
+
 odd numbers should return the integer either side of the halved number.
 
 ```js
@@ -30,5 +32,9 @@ describe('splitNums', () => {
 
   it('returns [[50,50], [20,20], [30,30]] when give an array containing [100, 40, 60]', () => {
     expect(splitNums([100,40,60])).to.eql([[50,50], [20,20], [30,30]])
+  });
+
+  it('returns [[1,2]] when give an array containing [3]', () => {
+    expect(splitNums([3])).to.eql([[1,2]])
   });
 });

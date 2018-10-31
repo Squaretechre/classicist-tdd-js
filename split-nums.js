@@ -4,7 +4,7 @@ function splitNums(array) {
 
   for(let i=0; i < array.length; i++) {
     let result = array[i] / 2
-    numberPairsArray.push([result, result]) 
+    numberPairsArray.push([Math.floor(result), Math.ceil(result)]) 
   }
 
   return numberPairsArray
