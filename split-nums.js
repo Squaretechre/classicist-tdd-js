@@ -1,15 +1,12 @@
 
 function splitNums(array) {
   let numberPairsArray = []
-  if(array[0] === 2) {
-    numberPairsArray.push([1,1])
+
+  for(let i=0; i < array.length; i++) {
+    let result = array[i] / 2
+    numberPairsArray.push([result, result]) 
   }
-  if(array[1] === 4) {
-    numberPairsArray.push([2,2])
-  }
-  if(array[2] === 6) {
-    numberPairsArray.push([3,3])
-  }
+
   return numberPairsArray
 }
 
