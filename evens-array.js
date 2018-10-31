@@ -1,15 +1,21 @@
 
+// if number is even
+// if(array[5] == 6) {
+   // push that number onto the evens array
+//   evenNumbers.push(6)
+// }
+
 function filterEvensFrom(array) {
   let evenNumbers = []
-  if(array[1] == 2) {
-    evenNumbers.push(2)
+
+  for(let i=0; i < array.length; i++) {
+    // if number is even
+    if(array[i] % 2 == 0) {
+      // push that number onto the evens array
+      evenNumbers.push(array[i])
+    }  
   }
-  if(array[3] == 4) {
-    evenNumbers.push(4)
-  }
-  if(array[5] == 6) {
-    evenNumbers.push(6)
-  }
+
   return evenNumbers
 }
 
